@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계정 삭제 요청 – RingMind</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #111;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-left: 4px solid #EF4444;
+            padding-left: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .method-box {
+            background: #F0FDF4;
+            border: 1px solid #86EFAC;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .method-box .title {
+            font-weight: 700;
+            font-size: 15px;
+            color: #166534;
+            margin-bottom: 8px;
+        }
+
+        .method-box p {
+            color: #166534;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .method-box ol {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .method-box ol li {
+            color: #166534;
+            margin-bottom: 4px;
+        }
+
+        .email-box {
+            background: #EFF6FF;
+            border: 1px solid #93C5FD;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .email-box .title {
+            font-weight: 700;
+            font-size: 15px;
+            color: #1E40AF;
+            margin-bottom: 8px;
+        }
+
+        .email-box p {
+            color: #1E40AF;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .warning-box {
+            background: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 24px 0;
+        }
+
+        .warning-box p {
+            color: #92400E;
+            margin: 0;
+            font-size: 13px;
+        }
+
+        a {
+            color: #4F46E5;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 32px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>계정 및 데이터 삭제 요청</h1>
+        <p class="subtitle">Account & Data Deletion Request · RingMind</p>
+
+        <p>RingMind 계정과 관련 데이터를 삭제하려면 아래 방법 중 하나를 사용하세요.</p>
+
+        <h2>방법 1: 앱 내에서 직접 삭제 (권장)</h2>
+        <div class="method-box">
+            <div class="title">✅ 즉시 처리 — 앱 설정에서 직접 삭제</div>
+            <ol>
+                <li>RingMind 앱 실행</li>
+                <li>하단 탭에서 <strong>설정</strong> 선택</li>
+                <li>하단의 <strong>계정 탈퇴</strong> 버튼 탭</li>
+                <li>"DELETE" 입력 후 확인</li>
+                <li>계정 및 서버에 저장된 모든 데이터가 즉시 삭제됩니다</li>
+            </ol>
+        </div>
+
+        <h2>방법 2: 이메일로 삭제 요청</h2>
+        <div class="email-box">
+            <div class="title">📧 이메일 요청</div>
+            <p>앱에 접근할 수 없는 경우 아래 이메일로 삭제를 요청하세요.</p>
+            <p style="margin-top: 10px;">
+                <strong>이메일:</strong> <a href="mailto:bnt0514@gmail.com">bnt0514@gmail.com</a><br />
+                <strong>제목:</strong> [RingMind] 계정 삭제 요청<br />
+                <strong>내용:</strong> 가입 시 사용한 Google 이메일 주소
+            </p>
+            <p style="margin-top: 10px;">요청 수신 후 <strong>7일 이내</strong> 처리됩니다.</p>
+        </div>
+
+        <h2>삭제되는 데이터</h2>
+        <ul>
+            <li>Firebase 계정 (Google UID)</li>
+            <li>서버에 저장된 사용량 메타데이터 및 토큰 사용 기록</li>
+            <li>구독 정보 및 결제 기록 (서버 측)</li>
+        </ul>
+
+        <div class="warning-box">
+            <p>⚠️ 기기 내 데이터(통화 요약, 대화본 등)는 앱 삭제 시 함께 삭제됩니다. 서버에는 저장되지 않습니다.</p>
+        </div>
+
+        <hr />
+        <p style="font-size: 13px; color: #888;">문의: <a href="mailto:bnt0514@gmail.com">bnt0514@gmail.com</a> · RingMind
+            · <a href="privacy-policy.html">개인정보 처리방침</a></p>
+
+    </div>
+</body>
+
+</html>
